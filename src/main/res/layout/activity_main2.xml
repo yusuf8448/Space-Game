@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <TextView
+            android:id="@+id/score_lb"
+            android:layout_width="149dp"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Score:999"
+            android:textColor="#ffffff"
+            android:textSize="25sp"/>
+
+        <ImageButton
+            android:id="@+id/pause_lb"
+            android:layout_width="52dp"
+            android:layout_height="53dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pause"
+            android:onClick="pauseGame"
+            android:padding="200dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/diamond"
+            android:layout_toLeftOf="@+id/pause_lb"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imgdiamond"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_coins"
+            android:layout_toLeftOf="@+id/imgdiamond"
+            android:text="100"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50sp"
+            android:text="Tap To Start"
+            android:textColor="#ffff"
+            android:textSize="40dp"
+            android:id="@+id/startLb"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/player"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/player1a"/>
+
+        <ImageView
+            android:id="@+id/cupcake"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cupcake"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/rock"
+            android:src="@drawable/rock"/>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:id="@+id/bomb"
+            android:src="@drawable/bomb"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/diamond"
+            android:src="@drawable/diamond"/>
+
+        <FrameLayout
+            android:id="@+id/frame_lb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/paused" />
+
+            <ImageButton
+                android:id="@+id/start_lb"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
+                android:onClick="pauseGame"
+                android:background="@drawable/resume" />
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALIEN RUSH"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFF"
+            android:textSize="30sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="83dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/diamond" />
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_margin="32dp"
+                android:text="10 POINTS"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="83dp"
+                android:src="@drawable/cupcake"
+                android:layout_margin="2dp" />
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_margin="32dp"
+                android:text="5 POINTS"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="83dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/rock" />
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="44dp"
+                android:layout_margin="32dp"
+                android:text="DODGE THE ROCKS"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="83dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/bomb" />
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="46dp"
+                android:layout_margin="32dp"
+                android:text="DODGE THE MISSILES"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/play"
+            android:background="@drawable/playbutton"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/shop"
+            android:background="@drawable/shop"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
